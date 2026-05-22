@@ -50,12 +50,12 @@ spec:
           resources:
             requests:
               #2gi initial 3gi max
-              memory: "2gi"
+              memory: "2Gi"
               cpu: "500m"
             limits:
-              memory: "3gi"
+              memory: "3Gi"
               cpu: "2000m"
       volumes:
         - name: minecraft-data
           persistentVolumeClaim:
-            claimName: minecraft-pvc
+            claimName: minecraft-data
