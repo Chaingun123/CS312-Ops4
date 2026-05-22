@@ -20,11 +20,11 @@ spec:
         - name: minecraft
           image: 262030799086.dkr.ecr.us-east-1.amazonaws.com/cs312-minecraft:mc-1.21.4-2
           ports:
-            - containerPort:25565
-              name:minecraft
+            - containerPort: 25565
+              name: minecraft
           envFrom:
             - configMapRef:
-              name:minecraft-config
+                name: minecraft-config
           volumeMounts:
             - name: minecraft-data
               mountPath: /data
