@@ -126,6 +126,7 @@ resource "aws_instance" "minecraft" {
     - chmod 0755 /usr/local/bin/ecr-credential-provider
     - curl -sfL https://get.k3s.io | sh -
     - git clone https://github.com/Chaingun123/CS312-Ops4.git /opt/ops4/
+    - sleep 5
     - cp /opt/ops4/manifests/*.yaml /var/lib/rancher/k3s/server/manifests
 
   EOF
