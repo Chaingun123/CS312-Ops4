@@ -36,3 +36,8 @@ variable "image_tag" {
   type = string
   default = "mc-1.21.4-1"
 }
+
+variable "devip"{
+  description = "IP of your ip adress followed by /32 cidr"
+  type = string 
+}
